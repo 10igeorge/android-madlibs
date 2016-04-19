@@ -13,24 +13,20 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/books"
         android:scaleType="centerCrop" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mad Libs"
-        android:id="@+id/textView"
-        android:textSize="40sp"
+        android:id="@+id/logoTextView"
+        android:textSize="60sp"
         android:textStyle="bold"
         android:textIsSelectable="true"
-        android:typeface="normal"
         android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="93dp" />
-
-
 
     <Button
         android:layout_width="fill_parent"
@@ -65,5 +61,16 @@
         android:layout_alignLeft="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
         android:layout_marginBottom="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your theme"
+        android:textColor="#ffffff"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SpaceActivity" />
-        <activity android:name=".SpaceResultsActivity"></activity>
+        <activity android:name=".SpaceResultsActivity" />
+        <activity android:name=".BeachActivity"></activity>
     </application>
 
 </manifest>

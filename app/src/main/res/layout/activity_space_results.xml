@@ -29,5 +29,16 @@
         android:textIsSelectable="true"
         android:background="#80000000"
         android:layout_alignBottom="@+id/imageView3"
-        android:layout_alignTop="@+id/imageView3" />
+        android:layout_alignTop="@+id/imageView3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Again"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="#ffffff" />
+
 </RelativeLayout>
