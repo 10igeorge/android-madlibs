@@ -20,9 +20,9 @@
         android:hint="Color"
         android:padding="8dp"
         android:layout_marginTop="34dp"
-        android:layout_below="@+id/submitSpaceButton"
-        android:layout_toLeftOf="@+id/submitSpaceButton"
-        android:layout_toStartOf="@+id/submitSpaceButton" />
+        android:layout_below="@+id/submitText"
+        android:layout_toLeftOf="@+id/submitText"
+        android:layout_toStartOf="@+id/submitText" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -113,8 +113,8 @@
         android:hint="Adjective"
         android:padding="8dp"
         android:layout_alignTop="@+id/adjectiveSpaceInput3"
-        android:layout_alignRight="@+id/submitSpaceButton"
-        android:layout_alignEnd="@+id/submitSpaceButton" />
+        android:layout_alignRight="@+id/submitText"
+        android:layout_alignEnd="@+id/submitText" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -124,7 +124,7 @@
         android:hint="Verb ending with -ing"
         android:padding="8dp"
         android:layout_marginBottom="35dp"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/submitSpaceButton"
         android:layout_toRightOf="@+id/colorSpaceInput"
         android:layout_toEndOf="@+id/colorSpaceInput" />
 
@@ -132,7 +132,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:id="@+id/button"
+        android:id="@+id/submitSpaceButton"
         android:background="@android:color/holo_blue_dark"
         android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
@@ -144,7 +144,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Space Libs"
-        android:id="@+id/submitSpaceButton"
+        android:id="@+id/submitText"
         android:textColor="#ffffff"
         android:textSize="40dp"
         android:layout_alignParentTop="true"
