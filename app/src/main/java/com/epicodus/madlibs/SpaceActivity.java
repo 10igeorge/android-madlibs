@@ -55,6 +55,18 @@ public class SpaceActivity extends AppCompatActivity {
                 String verb = mVerbSpaceInput.getText().toString();
 
                 Intent intent = new Intent(SpaceActivity.this, SpaceResultsActivity.class);
+
+                intent.putExtra("color", color);
+                intent.putExtra("noun1", noun1);
+                intent.putExtra("noun2", noun2);
+                intent.putExtra("noun3", noun3);
+                intent.putExtra("famousPlace", famousPlace);
+                intent.putExtra("adj1", adj1);
+                intent.putExtra("adj2", adj2);
+                intent.putExtra("adj3", adj3);
+                intent.putExtra("adj4", adj4);
+                intent.putExtra("verb", verb);
+
                 startActivity(intent);
             }
         });

@@ -20,9 +20,9 @@
         android:hint="Color"
         android:padding="8dp"
         android:layout_marginTop="34dp"
-        android:layout_below="@+id/submitText"
-        android:layout_toLeftOf="@+id/submitText"
-        android:layout_toStartOf="@+id/submitText" />
+        android:layout_below="@+id/s"
+        android:layout_toLeftOf="@+id/s"
+        android:layout_toStartOf="@+id/s" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -113,8 +113,8 @@
         android:hint="Adjective"
         android:padding="8dp"
         android:layout_alignTop="@+id/adjectiveSpaceInput3"
-        android:layout_alignRight="@+id/submitText"
-        android:layout_alignEnd="@+id/submitText" />
+        android:layout_alignRight="@+id/s"
+        android:layout_alignEnd="@+id/s" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -144,7 +144,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Space Libs"
-        android:id="@+id/submitText"
+        android:id="@+id/s"
         android:textColor="#ffffff"
         android:textSize="40dp"
         android:layout_alignParentTop="true"
