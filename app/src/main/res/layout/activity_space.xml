@@ -3,22 +3,153 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.epicodus.madlibs.SpaceActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView2"
+        android:src="@drawable/space"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorSpaceInput"
+        android:background="#ffffff"
+        android:hint="Color"
+        android:padding="8dp"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/submitSpaceButton"
+        android:layout_toLeftOf="@+id/submitSpaceButton"
+        android:layout_toStartOf="@+id/submitSpaceButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nounSpaceInput1"
+        android:background="#ffffff"
+        android:hint="Noun"
+        android:padding="8dp"
+        android:layout_alignTop="@+id/colorSpaceInput"
+        android:layout_toRightOf="@+id/colorSpaceInput"
+        android:layout_toEndOf="@+id/colorSpaceInput"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nounSpaceInput2"
+        android:background="#ffffff"
+        android:hint="Noun (pl.)"
+        android:padding="8dp"
+        android:layout_alignTop="@+id/nounSpaceInput1"
+        android:layout_alignRight="@+id/famousPlaceSpaceInput"
+        android:layout_alignEnd="@+id/famousPlaceSpaceInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nounSpaceInput3"
+        android:background="#ffffff"
+        android:hint="Noun (pl.)"
+        android:padding="8dp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/adjectiveSpaceInput1"
+        android:layout_alignLeft="@+id/colorSpaceInput"
+        android:layout_alignStart="@+id/colorSpaceInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/famousPlaceSpaceInput"
+        android:background="#ffffff"
+        android:hint="Famous Place"
+        android:padding="8dp"
+        android:layout_alignTop="@+id/nounSpaceInput3"
+        android:layout_toRightOf="@+id/nounSpaceInput1"
+        android:layout_toEndOf="@+id/nounSpaceInput1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjectiveSpaceInput1"
+        android:background="#ffffff"
+        android:hint="Adjective"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/adjectiveSpaceInput3"
+        android:layout_alignStart="@+id/adjectiveSpaceInput3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjectiveSpaceInput2"
+        android:background="#ffffff"
+        android:hint="Adjective"
+        android:padding="8dp"
+        android:layout_alignTop="@+id/adjectiveSpaceInput1"
+        android:layout_alignRight="@+id/verbSpaceInput"
+        android:layout_alignEnd="@+id/verbSpaceInput" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjectiveSpaceInput3"
+        android:background="#ffffff"
+        android:hint="Adjective"
+        android:padding="8dp"
+        android:layout_marginBottom="38dp"
+        android:layout_above="@+id/verbSpaceInput"
+        android:layout_alignRight="@+id/nounSpaceInput3"
+        android:layout_alignEnd="@+id/nounSpaceInput3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adjectiveSpaceInput4"
+        android:background="#ffffff"
+        android:hint="Adjective"
+        android:padding="8dp"
+        android:layout_alignTop="@+id/adjectiveSpaceInput3"
+        android:layout_alignRight="@+id/submitSpaceButton"
+        android:layout_alignEnd="@+id/submitSpaceButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verbSpaceInput"
+        android:background="#ffffff"
+        android:hint="Verb ending with -ing"
+        android:padding="8dp"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/button"
+        android:layout_toRightOf="@+id/colorSpaceInput"
+        android:layout_toEndOf="@+id/colorSpaceInput" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="GOt here"
-        android:id="@+id/textView2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Space Libs"
+        android:id="@+id/submitSpaceButton"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="66dp"
-        android:layout_marginStart="66dp"
-        android:layout_marginTop="79dp" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+
 </RelativeLayout>
